@@ -51,10 +51,10 @@ namespace LexRervationSaving
                         if (e.CurrentIntent.Name == "BookCar")
                         {
                             doc["Type"] = "Car";
-                            doc["PickupCity"] = e.CurrentIntent.Slots["Location"];
-                            doc["PickupDate"] = e.CurrentIntent.Slots["CheckInDate"];
-                            doc["ReturnDate"] = e.CurrentIntent.Slots["Nights"];
-                            doc["AverageAge"] = e.CurrentIntent.Slots["RoomType"];
+                            doc["PickupCity"] = e.CurrentIntent.Slots["PickUpCity"];
+                            doc["PickupDate"] = e.CurrentIntent.Slots["PickUpDate"];
+                            doc["ReturnDate"] = e.CurrentIntent.Slots["ReturnDate"];
+                            doc["DriverAge"] = e.CurrentIntent.Slots["DriverAge"];
                             doc["CarType"] = e.CurrentIntent.Slots["CarType"];
                         }
 
